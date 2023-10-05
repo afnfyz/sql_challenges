@@ -1,7 +1,11 @@
-**SQL Solutions for F1 Dataset Challenge**
+**<div align="center"> SQL Solutions for F1 Dataset Challenge </div>**
 
-<img width="800" alt="image" src="https://github.com/afnfyz/sql_projects/assets/124072294/b2ef8b6b-49f1-4faa-b0a1-39a52a9c2e95">
+<div align="center"> 
+<img width="830" alt="image" src="https://github.com/afnfyz/sql_projects/assets/124072294/350ce074-a7a9-42b7-b275-9b555df7f6dd">
+<!--<img width="600" alt="image" src="https://github.com/afnfyz/sql_projects/assets/124072294/b2ef8b6b-49f1-4faa-b0a1-39a52a9c2e95"> -->
+</div>
 
+<br>
 
 ***The Schema:***
 
