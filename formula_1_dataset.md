@@ -1,5 +1,8 @@
 **SQL Solutions for F1 Dataset Challenge**
 
+<img width="800" alt="image" src="https://github.com/afnfyz/sql_projects/assets/124072294/b2ef8b6b-49f1-4faa-b0a1-39a52a9c2e95">
+
+
 ***The Schema:***
 
 <img width="800" alt="image" src="https://github.com/afnfyz/sql_projects/assets/124072294/85842c7b-0cf5-4a89-b601-022890f59b7c">
@@ -231,3 +234,5 @@ ON m21.driverid = m19.driverid;
 ```
 
 </details>
+
+[def]: https://github.com/afnfyz/sql_projects/assets/124072294/b2ef8b6b-49f1-4faa-b0a1-39a52a9c2e95
