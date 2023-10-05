@@ -12,6 +12,7 @@
 <div align="center"> 
 <img width="800" alt="image" src="https://github.com/afnfyz/sql_projects/assets/124072294/85842c7b-0cf5-4a89-b601-022890f59b7c">
 </div>
+[//]: # (The Schema)
 
 <details>
 <summary><strong>Task 1: List of Drivers</strong></summary>
