@@ -21,7 +21,7 @@ SELECT driverid, forename, surname
 FROM drivers
 ORDER BY DRIVERID;
 ```
-
+<img width="800" alt="image" src="https://github.com/afnfyz/sql_projects/assets/124072294/a3626f2b-bbeb-4c10-a9d4-a47d7fa24081">
 </details>
 
 <details>
@@ -36,7 +36,7 @@ FROM drivers as d
 INNER JOIN results as r ON d.driverid = r.driverid
 WHERE fastestlapspeed IS NOT NULL;
 ```
-
+<img width="800" alt="image" src="https://github.com/afnfyz/sql_projects/assets/124072294/894f7dee-da2a-459d-a8f1-a7603b627a23">
 </details>
 
 <details>
@@ -60,6 +60,7 @@ d.SURNAME
 HAVING 
     Fastest_Lap_Speed IS NOT NULL
 ```
+<img width="1061" alt="image" src="https://github.com/afnfyz/sql_projects/assets/124072294/47bee386-ab07-4a99-971f-10079339612e">
 
 </details>
 
@@ -86,6 +87,7 @@ d.driverid,
 d.forename,
 d.surname;
 ```
+<img width="1061" alt="image" src="https://github.com/afnfyz/sql_projects/assets/124072294/24ac9dcc-ab68-4169-b9eb-b41f01cb2b08">
 
 </details>
 
@@ -113,7 +115,7 @@ d.driverid,
 d.forename,
 d.surname;
 ```
-
+<img width="861" alt="image" src="https://github.com/afnfyz/sql_projects/assets/124072294/814749f9-d885-4387-aac4-aae3da6d4499">
 </details>
 
 <details>
@@ -158,6 +160,10 @@ d.forename,
 d.surname,
 w.total_wins;
 ```
+
+
+<img width="1061" alt="image" src="https://github.com/afnfyz/sql_projects/assets/124072294/1d192519-bf65-4b79-84c5-39bd5422a4d2">
+
 
 </details>
 
@@ -237,6 +243,7 @@ FROM MONACO_2021 m21
 JOIN MONACO_2019 m19
 ON m21.driverid = m19.driverid;
 ```
+<img width="1058" alt="image" src="https://github.com/afnfyz/sql_projects/assets/124072294/8adbd9d0-0ad4-4266-b297-90c27e3687a6">
 
 </details>
 
