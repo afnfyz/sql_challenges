@@ -27,23 +27,82 @@ You can inspect the entity relationship diagram and example data below.
 
 **<div align='center'> Case Study Questions </div>**
 
-Each of the following case study questions can be answered using a single SQL statement:
 
-- What is the total amount each customer spent at the restaurant?
+<details>
+  <summary><strong>What is the total amount each customer spent at the restaurant?</strong></summary>
 
-- How many days has each customer visited the restaurant?
-What was the first item from the menu purchased by each customer?
+  <!-- Your detailed explanation goes here -->
+  Customer spending details...
+</details>
 
-- What is the most purchased item on the menu and how many times was it purchased by all customers?
+<br>
 
-- Which item was the most popular for each customer?
+<details>
+  <summary><strong>How many days has each customer visited the restaurant? What was the first item from the menu purchased by each customer?</strong></summary>
 
-- Which item was purchased first by the customer after they became a member?
+  <!-- Your detailed explanation goes here -->
+  Customer visit and first purchase details...
+</details>
 
-- Which item was purchased just before the customer became a member?
+<br>
 
-- What is the total items and amount spent for each member before they became a member?
+<details>
+  <summary><strong>What is the most purchased item on the menu and how many times was it purchased by all customers?</strong></summary>
 
-- If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?
+  <!-- Your detailed explanation goes here -->
+  Most purchased item details...
+</details>
 
-- In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
+<br>
+
+<details>
+  <summary><strong>Which item was the most popular for each customer?</strong></summary>
+
+  <!-- Your detailed explanation goes here -->
+  Most popular item for each customer details...
+</details>
+
+<br>
+
+<details>
+  <summary><strong>Which item was purchased first by the customer after they became a member?</strong></summary>
+
+  <!-- Your detailed explanation goes here -->
+  First purchase after becoming a member details...
+</details>
+
+<br>
+
+<details>
+  <summary><strong>Which item was purchased just before the customer became a member?</strong></summary>
+
+  <!-- Your detailed explanation goes here -->
+  Purchase just before becoming a member details...
+</details>
+
+<br>
+
+<details>
+  <summary><strong>What is the total items and amount spent for each member before they became a member?</strong></summary>
+
+  <!-- Your detailed explanation goes here -->
+  Member spending details before joining...
+</details>
+
+<br>
+
+<details>
+  <summary><strong>If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?</strong></summary>
+
+  <!-- Your detailed explanation goes here -->
+  Points calculation details...
+</details>
+
+<br>
+
+<details>
+  <summary><strong>In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?</strong></summary>
+
+  <!-- Your detailed explanation goes here -->
+  Points calculation for the first week details...
+</details>
