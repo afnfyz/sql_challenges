@@ -1,3 +1,5 @@
+[Go back to README](README.md)
+
 <div align="center"> 
 <h1> SQL Solutions Danny's Diner Dataset </h1>
 </div>
