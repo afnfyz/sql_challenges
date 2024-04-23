@@ -33,7 +33,13 @@ You can inspect the entity relationship diagram and example data below.
 <details>
   <summary><strong>What is the total amount each customer spent at the restaurant?</strong></summary>
 
-  <!-- Your detailed explanation goes here -->
+  ```SQL
+  SELECT s.customer_id, sum(price)
+FROM SALES s
+JOIN MENU me
+ON me.product_id = s.product_id
+GROUP BY s.CUSTOMER_ID;
+  ```
   Customer spending details...
 </details>
 
@@ -41,8 +47,30 @@ You can inspect the entity relationship diagram and example data below.
 
 <details>
   <summary><strong>How many days has each customer visited the restaurant? What was the first item from the menu purchased by each customer?</strong></summary>
+Days Visited:
+ 
+ ```SQL
+ SELECT s.customer_id, count(DISTINCT s.order_date)
+FROM SALES s
+GROUP BY s.CUSTOMER_ID;
+```
+First Orders for Each Customer:
 
-  <!-- Your detailed explanation goes here -->
+```SQL
+SELECT s.customer_id,
+       first_order.first_order_date,
+       me.product_name
+FROM (
+    SELECT customer_id,
+           MIN(order_date) AS first_order_date
+    FROM SALES
+    GROUP BY customer_id
+) AS first_order
+JOIN SALES s ON s.customer_id = first_order.customer_id
+JOIN MENU me ON me.product_id = s.product_id
+WHERE s.order_date = first_order.first_order_date;
+```
+
   Customer visit and first purchase details...
 </details>
 
@@ -51,7 +79,14 @@ You can inspect the entity relationship diagram and example data below.
 <details>
   <summary><strong>What is the most purchased item on the menu and how many times was it purchased by all customers?</strong></summary>
 
-  <!-- Your detailed explanation goes here -->
+```SQL
+SELECT s.customer_id, me.product_name, count(*) as "number of times purchased"
+FROM SALES s
+JOIN MENU me
+ON me.product_id = s.product_id
+GROUP BY s.customer_id, me.product_name;
+```
+
   Most purchased item details...
 </details>
 
@@ -60,7 +95,24 @@ You can inspect the entity relationship diagram and example data below.
 <details>
   <summary><strong>Which item was the most popular for each customer?</strong></summary>
 
-  <!-- Your detailed explanation goes here -->
+ ``` SQL 
+SELECT s.customer_id,
+       me.product_name,
+       COUNT(*) AS number_of_times_purchased
+FROM SALES s
+JOIN MENU me ON me.product_id = s.product_id
+GROUP BY s.customer_id, me.product_name
+HAVING COUNT(*) = (
+    SELECT MAX(purchase_count)
+    FROM (
+        SELECT customer_id, product_id, COUNT(*) AS purchase_count
+        FROM SALES
+        GROUP BY customer_id, product_id
+    ) AS max_counts
+    WHERE max_counts.customer_id = s.customer_id
+)
+ORDER BY s.customer_id;
+```
   Most popular item for each customer details...
 </details>
 
@@ -96,7 +148,14 @@ You can inspect the entity relationship diagram and example data below.
 <details>
   <summary><strong>If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?</strong></summary>
 
-  <!-- Your detailed explanation goes here -->
+```SQL
+SELECT s.customer_id, 
+       sum(me.price * CASE WHEN me.product_name = 'sushi' THEN 20 ELSE 10 END) AS "Points"
+FROM SALES s
+JOIN MENU me
+ON me.product_id = s.product_id
+GROUP BY s.customer_id;
+```
   Points calculation details...
 </details>
 
