@@ -7,6 +7,8 @@
 
 <br>
 
+**Challenge Link:** [Summer of SQL](https://github.com/wjsutton/the_summer_of_sql)
+
 **Requirements:**
 - Split the Transaction Code to extract the letters at the start of the transaction code. These identify the bank who processes the transaction.
 - Rename the new field with the Bank code 'Bank'. 
